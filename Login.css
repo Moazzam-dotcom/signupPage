@@ -7,6 +7,74 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
+body {
+    margin: 0;
+  }
+  
+  .nav-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .nav-container nav {
+    background: linear-gradient(to right, rgb(150, 189, 205), rgb(226, 60, 60));
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px 48px;
+    box-shadow: 0 4px 8px -4px rgba(0, 0, 0, 0.4);
+    border-radius: 0 0 20px 20px;
+    box-sizing: border-box;
+  }
+  
+  .nav-container nav .logo {
+    font-size: 30px;
+    font-weight: 900;
+    color: black;
+  }
+  
+  .nav-container .menu-items {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-container .menu-items > a {
+    color: black;
+    margin: 0 24px;
+    text-decoration: none;
+    position: relative;
+  }
+  
+  .nav-container .menu-items > a:hover::after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: #f8f9fa;
+    bottom: -13px;
+    left: 0;
+  } 
+  .nav-container .social {
+    background: black; 
+    color: white;        
+    padding: 4px 16px;
+    border-radius: 20px;
+  }
+  
+  .nav-container .social img {
+    vertical-align: middle;
+    transition: all 500ms;
+  }
+  
+  .nav-container .social img:hover {
+    transform: scale(1.1);
+  }
+  
 
 body{
     background-color: #c9d6ff;
